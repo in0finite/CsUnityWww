@@ -1,1 +1,5 @@
-theme: cayman
+remote_theme: pages-themes/cayman@v0.2.0
+title: CsUnity
+description: Counter-Strike 2 map viewer on Unity engine
+plugins:
+- jekyll-remote-theme
