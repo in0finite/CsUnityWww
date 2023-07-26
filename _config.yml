@@ -3,3 +3,7 @@ title: CsUnity
 description: Counter-Strike 2 map viewer on Unity engine
 plugins:
 - jekyll-remote-theme
+show_downloads: true
+github:
+  zip_url: http://example.com/download.zip
+  is_project_page: false
