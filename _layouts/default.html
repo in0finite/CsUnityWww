@@ -26,6 +26,22 @@
     <main id="content" class="main-content" role="main">
       {{ content }}
 
+      ## Changelog
+      
+      <div class="posts">
+        {% for release in site.github.releases %}
+          <article class="post">
+      
+            <h1><a href="{{ release.assets[0].browser_download_url }}">{{ release.tag_name }}</a></h1>
+      
+            <div class="entry">
+              {{ release.body }}
+            </div>
+      
+          </article>
+        {% endfor %}
+      </div>
+      
       <footer class="site-footer">
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
