@@ -26,16 +26,16 @@
     <main id="content" class="main-content" role="main">
       {{ content }}
 
-      ## Changelog
+      <h2>Changelog</h2>
       
       <div class="posts">
         {% for release in site.github.releases %}
           <article class="post">
       
-            <h1><a href="{{ release.assets[0].browser_download_url }}">{{ release.tag_name }}</a></h1>
+            <h1><a href="{{ release.assets[0].html_url }}">{{ release.tag_name }}</a></h1>
       
             <div class="entry">
-              {{ release.body }}
+              {{ release.body | markdownify }}
             </div>
       
           </article>
