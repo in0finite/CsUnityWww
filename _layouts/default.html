@@ -19,7 +19,7 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.show_downloads %}
-        <a href="{{ site.github.latest_release.assets[0].browser_download_url }}" class="btn">{{ site.download_button_text }}</a>
+        <a href="{{ site.github.latest_release.assets[0].browser_download_url }}" class="btn">Download {{ site.github.latest_release.tag_name }} for Windows</a>
       {% endif %}
     </header>
 
